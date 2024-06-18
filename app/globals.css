@@ -2,32 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+@font-face {
+  font-family: 'NEXT APP';
+  src: url('../public/NEXT ART_Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'NEXT APP';
+  src: url('../public/NEXT ART_Heavy.otf') format('opentype');
+  font-style: normal;
+  font-weight: 800;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'NEXT APP';
+  src: url('../public/NEXT ART_Light.otf') format('opentype');
+  font-style: normal;
+  font-weight: 300;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: 'NEXT APP';
+  src: url('../public/NEXT ART_Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'NEXT APP';
+  src: url('../public/NEXT ART_SemiBold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+.inter {
+  font-family: var(--font-inter);
+}
+
+.nunito {
+  font-family: var(--font-nunito);
+}
+
+.next {
+  font-family: 'NEXT APP';
+}
+
+* {
+  /* outline: 1px solid green; */
 }

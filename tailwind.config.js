@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,12 +8,22 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        green: '#1a3e3e',
+        yellow: '#F2BE22',
+        gray: '#FDFDFD'
       },
+      spacing: {
+        wrapper: '1180px'
+      },
+      gridTemplateColumns: {
+        'gallery-md': 'repeat(auto-fill, minmax(200px, 1fr))',
+        'gallery-sm': '150px'
+      }
     },
+  },
+  future: {
+    hoverOnlyWhenSupported: true
   },
   plugins: [],
 };
